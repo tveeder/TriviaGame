@@ -1,26 +1,15 @@
 
-
-    body {
+body {
         background-color: blue;
     }
 
-    #maindiv{
-    margin : 30px;
-    background-color: yellow;
-    width: 50%;
-    height: 50%;
-
-    }
-    body {
+body {
   background-color: rgb(112, 56, 56);
 }
-
 .container {
   width: 410px;
   margin: 10% auto;
 }
-
-
 .shadow {
   color: #fff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -39,19 +28,32 @@
   position: relative;
   /* margin:0; */
 }
-/* .script span {
-  background-color: #222;
-  padding: 0 0.3em;
-} */
-/* .script:before {
-  content:"";
-  display: block;
+
+#hat_image {
+
+position: relative;
+/* float: right; */
+ margin-left: 450px; 
+/* margin: auto; */
+
+}
+canvas {
   position: absolute;
-  z-index:-1;
-  top: 50%;
-  width: 100%;
-  border-bottom: 3px solid #fff;
-} */
+  margin: auto;
+  left: 0;
+  right: 0;
+  border: solid 1px white;
+  border-radius: 10px;
+}
+
+#thebutton {
+
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+  margin-left: 300px;
+}
+
 .text-one {
   font-size: 60px;
 }
@@ -60,4 +62,19 @@
 }
 .text-three {
   font-size: 100px;
+}
+
+#my-quiz {
+background-color: blue;
+  max-width: 300px;
+  margin: auto 40px auto 40px;
+  background: yellow;
+  /* height: 30px; */
+  padding: 10px;
+  /* padding-top: 400px; */
+  margin-bottom: 500px;
+}
+#countdown{
+  font-size: 50px;
+  text-align: center;
 }
