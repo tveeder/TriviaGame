@@ -9,26 +9,23 @@
 
     <link rel="stylesheet" href="./assets/css/style.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <!-- <script src="java.js">  </script> -->
 
 </head>
 
 <body>
 
-
-    <canvas>
-
-
-    </canvas>
-    <div class="container">
+    <!-- <div class="container">
         <p class="title-class"><span>Time to play </span></p>
         <p class="shadow text-one">Personal</p>
         <p class="shadow text-two">Trivia</p>
         <p class="shadow text-three">Quiz</p>
 
-    </div>
+    </div> -->
 
-    <button id="thebutton" type="button">Click Me!</button>
+    <button id="thebutton" type="button">Click here to start the quiz. You have 30 seconds. </button>
 
     <div id="countdown"></div>
     <img id="hat_image" src="./assets/images/Rainierimage.jpg" alt="">
@@ -37,75 +34,80 @@
 
 
         <fieldset>
-            <legend>What is the class of the USS Rainier?</legend>
-            <input type="radio" name="model1" value="merchant">merchant<br>
-            <input type="radio" name="model1" value="supply">supply<br>
-            <input type="radio" name="model1" value="frigate">frigate<br>
-            <input type="radio" name="model1" value="dock">dock<br>
+            <p>
+                <legend>What is the class of the USS Rainier?</legend>
+                <input type="radio" name="question1" value="merchant">merchant<br>
+                <input type="radio" name="one[]" value="supply">supply<br>
+                <input type="radio" name="one[]" value="frigate">frigate<br>
+                <input type="radio" name="one[]" value="dock">dock<br>
+            </p>
         </fieldset>
 
         <fieldset>
-            <legend>What does the white signify?</legend>
-            <input type="radio" name="model1" value="uniformity">uniformity<br>
-            <input type="radio" name="model1" value="what of their eyes">white of their eyes<br>
-            <input type="radio" name="model1" value="reflection of sun">reflection of sun<br>
-            <input type="radio" name="model1" value="snow caps of antartica">snow caps of antartic<br>
+            <p>
+
+                <legend>Rainier was launched which year?</legend>
+                <input type="radio" name="question2" value="1921">1921<br>
+                <input type="radio" name="two[]" value="1967">1967<br>
+                <input type="radio" name="two[]" value="1951">1951<br>
+                <input type="radio" name="two[]" value="1941">1941<br>
+            </p>
         </fieldset>
 
 
         <fieldset>
-            <legend>What do the black pellets on the badge signify?</legend>
-            <input type="radio" name="model1" value="number of guns">number of guns<br>
-            <input type="radio" name="model1" value="number of countries">visited counties<br>
-            <input type="radio" name="model1" value="number of kills">number of kills<br>
-            <input type="radio" name="model1" value="ammunition">ammunition<br>
+            <legend>When did O'Rourke retire?</legend>
+            <input type="radio" name="question3" value="1974">1974<br>
+            <input type="radio" name="three[]" value="number of countries">1980<br>
+            <input type="radio" name="three[]" value="number of kills">1981<br>
+            <input type="radio" name="three[]" value="ammunition">1969<br>
         </fieldset>
 
-        <fieldset>
-            <legend>What does the red signify?</legend>
-            <input type="radio" name="model1" value="25">$25<br>
-            <input type="radio" name="model1" value="35">$35<br>
-            <input type="radio" name="model1" value="45">$45<br>
-            <input type="radio" name="model1" value="55">$55<br>
-        </fieldset>
-
-        <fieldset>
-            <legend>What year was Rainiers final deployment?</legend>
-            <input type="radio" name="model1" value="1966">1966<br>
-            <input type="radio" name="model1" value="1996">1996<br>
-            <input type="radio" name="model1" value="2006">2006<br>
-            <input type="radio" name="model1" value="2000">2000<br>
-        </fieldset>
-        <fieldset>
-            <legend>How many tons is Raineirs ordnance stowage?</legend>
-            <input type="radio" name="model1" value="1800">1800<br>
-            <input type="radio" name="model1" value="1000">1000<br>
-            <input type="radio" name="model1" value="3500">3500<br>
-            <input type="radio" name="model1" value="2300">$2300<br>
+        <!-- <fieldset>
+            <legend>Who was the first captain of the ship?</legend>
+            <input type="radio" name="four[]"" value=" Murphy">Murphy<br>
+            <input type="radio" name="four[]"" value=" Meek">Meek<br>
+            <input type="radio" name="four[]"" value=" Wayne">Wayne<br>
+            <input type="radio" name="four[]"" value=" Strummer">Strummer<br>
         </fieldset>
 
         <fieldset>
             <legend>How many gallons of fuel can Rainier pump per minute?</legend>
-            <input type="radio" name="model1" value="1000">1000 <br>
-            <input type="radio" name="model1" value="2500">2500 <br>
-            <input type="radio" name="model1" value="3300">3300 <br>
-            <input type="radio" name="model1" value="6000">6000 <br>
+            <input type="radio" name="five[]" value="1000">1000 <br>
+            <input type="radio" name="five[]" value="2500">2500 <br>
+            <input type="radio" name="five[]" value="3300">3300 <br>
+            <input type="radio" name="five[]" value="6000">6000 <br>
         </fieldset>
         <fieldset>
-            <legend>Rainer's maiden deployment began from where?</legend>
-            <input type="radio" name="model1" value="San Diego">San Diego<br>
-            <input type="radio" name="model1" value="Boston">Boston<br>
-            <input type="radio" name="model1" value="Virgina Beach">Virgia Beach<br>
-            <input type="radio" name="model1" value="Miami">Miami<br>
+            <legend>How many battle stars did she earn during the Korean War?</legend>
+            <input type="radio" name="six[]" value="5">5<br>
+            <input type="radio" name="six[]" value="3">3<br>
+            <input type="radio" name="six[]" value="2">2<br>
+            <input type="radio" name="six[]" value="8">8<br>
         </fieldset>
 
         <fieldset>
-            <legend>In the Persian Gulf, Rainier completed a record number of how many replenishments?</legend>
-            <input type="radio" name="model1" value="25">25<br>
-            <input type="radio" name="model1" value="148">148<br>
-            <input type="radio" name="model1" value="355">355<br>
-            <input type="radio" name="model1" value="244">244<br>
+            <legend>Which bay in S. Vietnam was Rainier most active in?</legend>
+            <input type="radio" name="seven[]" value="Subic">Subic<br>
+            <input type="radio" name="seven[]" value="Bengal">Bengal<br>
+            <input type="radio" name="seven[]" value="Ha Long">Ha Long<br>
+            <input type="radio" name="seven[]" value="Fundy">Fundy<br>
         </fieldset>
+
+        <fieldset>
+            <legend>Where did she operate in 1952?</legend>
+            <input type="radio" name="model1" value="Sasebo">Sasebo<br>
+            <input type="radio" name="four[]" value="Manilla">Manilla<br>
+            <input type="radio" name="four[]" value="2006">2006<br>
+            <input type="radio" name="four[]" value="2000">2000<br>
+        </fieldset>
+        <fieldset>
+            <legend>How many tons is Raineirs ordnance stowage?</legend>
+            <input type="radio" name="four[]" value="1800">1800<br>
+            <input type="radio" name="four[]" value="1000">1000<br>
+            <input type="radio" name="four[]" value="3500">3500<br>
+            <input type="radio" name="four[]" value="2300">$2300<br>
+        </fieldset> -->
     </form>
     <script type="text/javascript" src="./assets/javascript/app.js">   </script>
 
