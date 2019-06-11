@@ -1,9 +1,14 @@
 
 var correct = 0;
 var incorrect = 0;
+var unanswered = 0;
 
 $("#thebutton").click(function () {
 
+    $("#thebutton").hide()
+
+    correct = 0;
+    incorrect = 0;
 
     var timeleft = 10;
 
@@ -12,7 +17,7 @@ $("#thebutton").click(function () {
         timeleft -= 1;
         if (timeleft <= 0) {
             clearInterval(downloadTimer);
-            document.getElementById("countdown").innerHTML = "Time is up!"
+            document.getElementById("countdown").innerHTML = "Hit refresh to play again."
             checkAnswers()
         }
     }, 1000);
@@ -29,26 +34,62 @@ function checkAnswers() {
     if (question1 === "merchant") {
         correct++
     }
-    else incorrect++;
+    else if (question1 === "") {
+
+        unanswered++
+    } else {
+
+        incorrect++
+    }
+
+
+    console.log(question1);
+
+    ///////////////////////////////////
 
     if (question2 === "1941") {
 
         correct++
     }
-    else incorrect++
+    else if (question2 === "") {
+
+        unanswered++
+    }
+    else {
+
+        incorrect++
+    }
+    console.log(question2);
+
+    ///////////////////////////////////
 
     if (question3 === "1974") {
 
         correct++
     }
-    else incorrect++
+    else if (question3 === "") {
 
+        unanswered++
+    }
+    else {
+
+        incorrect++
+
+    }
+    console.log(question3);
+
+    // function results() {
+
+    // $("#corr_results").html()  "you got " + correct;
+
+
+    // }
 
     alert("number correct is: " + correct);
 
     alert("number incorrect is: " + incorrect);
 
-    alert("number unanwered: ");
+    alert("number unanwered: " + unanswered);
 
 
 
