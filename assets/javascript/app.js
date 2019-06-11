@@ -91,13 +91,18 @@ function checkAnswers() {
 
     alert("number unanwered: " + unanswered);
 
+    document.getElementById("correct").innerHTML = "Number correct is: " + correct;
+    document.getElementById("incorrect").innerHTML = "Number incorrect is: " + incorrect;
+    document.getElementById("unanswered").innerHTML = "Number unanswered is: " + unanswered;
 
-
+    //$("#correct").text("Number correct is:  + correct");
+    // $("#correct").html(correct)
+    // $("#correct").html(correct)
 
 
     console.log(correct);
-    console.log(question1);
-    console.log(question2);
+    console.log(question1); -
+        console.log(question2);
 }
 
 
