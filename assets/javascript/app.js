@@ -31,7 +31,7 @@ function checkAnswers() {
     var question3 = document.quizform.question3.value;
 
 
-    if (question1 === "merchant") {
+    if (question1 === "supply") {
         correct++
     }
     else if (question1 === "") {
