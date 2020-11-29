@@ -1,7 +1,11 @@
-# TriviaGame
-a trivia game
+# navy-trivia-game
+
+width="400" height="400"
 
 https://tveeder.github.io/navy-trivia-game/
 
 
-making changes to the README file
+<img src="assets/images/Rainierimage.jpg" width="200" height="200">
+
+
+
