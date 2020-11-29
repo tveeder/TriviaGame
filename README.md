@@ -1,6 +1,5 @@
 # navy-trivia-game
 
-width="400" height="400"
 
 https://tveeder.github.io/navy-trivia-game/
 
